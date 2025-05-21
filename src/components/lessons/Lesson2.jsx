@@ -7,11 +7,13 @@ const Lesson2 = {
   idx: 2,
   content: (
     <div className="lesson-content">
-      <h2>tnwjd</h2>
+      <h2>프로젝트 명령어 사용하기</h2>
       <p>내용</p>
       <SyntaxHighlighter language="jsx" style={oneDark}>
         {/* `` 안에 코드 */}
-        {`수정 다시 수정`}
+{
+`코드`
+}
       </SyntaxHighlighter>
     </div>
   ),

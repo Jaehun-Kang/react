@@ -2,12 +2,12 @@ import '../../styles/lesson.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const Lesson4 = {
-    name: '4. 컴포넌트 기초',
-    idx: 4,
+const Lesson6 = {
+    name: '6. 조건부 렌더링과 리스트 렌더링',
+    idx: 6,
     content: (
         <div className="lesson-content">
-            <h2>컴포넌트 기초</h2>
+            <h2>조건부 렌더링과 리스트 렌더링</h2>
             <p>내용</p>
             <SyntaxHighlighter language="jsx" style={oneDark}>
                 {/* `` 안에 코드 */}
@@ -19,4 +19,4 @@ const Lesson4 = {
     )
 };
 
-export default Lesson4;
+export default Lesson6;

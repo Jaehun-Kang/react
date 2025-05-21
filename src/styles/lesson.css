@@ -1,39 +1,49 @@
-body, html, .app {
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+}
+
+body, html, .app {
     height: 100%;
     font-family: sans-serif;
+    font-size: 14px;
     background-color: #121212;
     color: #e0e0e0;
 }
 
+
 .app {
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 .fixed-header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: auto;
     background: #1e1e1e;
     color: #fff;
-    padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
     z-index: 1000;
 }
 
+.fixed-header h1 {
+    margin: 24px;
+    font-size: 2rem;
+}
+
 .main-layout {
     display: flex;
-    padding-top: 80px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     box-sizing: border-box;
     width: 100%;
 }
 
 .sidebar {
-    width: 200px;
+    width: 15%;
+    min-width: 250px;
     border-right: 1px solid #333;
-    padding: 1rem;
+    padding: 1rem .5rem;
     background-color: #1a1a1a;
     overflow-y: auto;
 }
@@ -45,10 +55,20 @@ body, html, .app {
 }
 
 .lesson-list li {
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-    border-left: 3px solid transparent;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-top: 4px;
     color: #ccc;
+}
+
+.lesson-list li:first-child {
+    margin-top: 0;
+}
+
+.lesson-list li:hover {
+    border-color: white;
 }
 
 .lesson-list li.selected {
@@ -60,25 +80,32 @@ body, html, .app {
 
 .content-area {
     flex: 1 1 auto; /* 남은 공간 전부 차지 */
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     overflow-y: auto;
     background-color: #181818;
     color: #e0e0e0;
 }
 
 .content-area pre {
-  background-color: #2a2a2a;
-  padding: 1rem;
-  border-radius: 8px;
-  overflow-x: auto;
-  display: inline-block;      /* 너비를 내용 크기에 맞춤 */
-  max-width: 100%;            /* 부모 너비를 넘지 않도록 제한 */
-  margin: 1rem 0;             /* 위아래 간격만 */
-  box-sizing: border-box;
-  white-space: pre;           /* 줄바꿈 유지 */
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: .5rem;
+    overflow-x: auto;
+    display: inline-block;      /* 너비를 내용 크기에 맞춤 */
+    max-width: 100%;            /* 부모 너비를 넘지 않도록 제한 */
+    margin: 1rem 0;             /* 위아래 간격만 */
+    box-sizing: border-box;
+    white-space: pre;           /* 줄바꿈 유지 */
+}
+
+.lesson-content p {
+    margin-left: .5rem;
+    font-size: 16px;
+    font-weight: 400;;
 }
 
 .lesson-content h2 {
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
     color: #fff;
 }

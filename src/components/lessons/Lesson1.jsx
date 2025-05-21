@@ -3,7 +3,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const Lesson1 = {
-  name: '1. 프로젝트 생성하기..!@!@',
+  name: '1. 프로젝트 생성하기',
   idx: 1,
   content: (
     <div className="lesson-content">
@@ -11,7 +11,9 @@ const Lesson1 = {
       <p>내용</p>
       <SyntaxHighlighter language="jsx" style={oneDark}>
         {/* `` 안에 코드 */}
-        {`hello`}
+{
+`코드`
+}
       </SyntaxHighlighter>
     </div>
   ),
