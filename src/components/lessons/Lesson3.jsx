@@ -8,7 +8,7 @@ const Lesson3 = {
   content: (
     <div className="lesson-content">
       <h2>리액트 프로젝트 살펴보기</h2>
-      <p>왜 안될까?</p>
+      <p>왜 안될까?이제 되는건가..?</p>
       <SyntaxHighlighter language="jsx" style={oneDark}>
         {/* `` 안에 코드 */}
         {`코드`}
