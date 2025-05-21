@@ -11,7 +11,7 @@ const Lesson2 = {
       <p>내용</p>
       <SyntaxHighlighter language="jsx" style={oneDark}>
         {/* `` 안에 코드 */}
-        {`수정`}
+        {`수정 다시 수정`}
       </SyntaxHighlighter>
     </div>
   ),
