@@ -1,6 +1,5 @@
 import '../../styles/lesson.css';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import CodeBlock from '../CodeBlock';
 
 const Lesson0 = {
     name: '프리셋',
@@ -9,12 +8,11 @@ const Lesson0 = {
         <div className="lesson-content">
             <h2>제목</h2>
             <p>내용</p>
-            <SyntaxHighlighter language="jsx" style={oneDark}>
-                {/* `` 안에 코드 */}
-{
-`코드`
-}
-            </SyntaxHighlighter>
+            <CodeBlock
+                filename="MyComponent.jsx"
+                language="jsx"
+                code={`code`}
+            />
         </div>
     )
 };

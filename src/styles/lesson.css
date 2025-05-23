@@ -79,7 +79,7 @@ body, html, .app {
 }
 
 .content-area {
-    flex: 1 1 auto; /* 남은 공간 전부 차지 */
+    flex: 1 1 auto;
     padding: 2.5rem 2rem;
     overflow-y: auto;
     background-color: #181818;
@@ -91,11 +91,11 @@ body, html, .app {
     padding: 1rem;
     border-radius: .5rem;
     overflow-x: auto;
-    display: inline-block;      /* 너비를 내용 크기에 맞춤 */
-    max-width: 100%;            /* 부모 너비를 넘지 않도록 제한 */
-    margin: 1rem 0;             /* 위아래 간격만 */
+    display: block;
+    max-width: 100%;
+    margin: 1rem 0;
     box-sizing: border-box;
-    white-space: pre;           /* 줄바꿈 유지 */
+    white-space: pre;
 }
 
 .lesson-content p {
@@ -109,3 +109,30 @@ body, html, .app {
     margin-bottom: 1.5rem;
     color: #fff;
 }
+
+.lesson-content h3 {
+    font-size: 1.25rem;
+    margin-block: 1.75rem .75rem;
+    color: #fff;
+}
+
+
+.code-wrapper {
+    background-color: #2a2a2a;
+    border-radius: .5rem;
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    border: 1px solid #444;
+}
+
+.code-filename {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    border-radius: .5rem .5rem 0 0;
+    border-bottom: 1px solid #444;
+}
+

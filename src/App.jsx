@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <header className="fixed-header">
-        <h1>📘 리액트 학습 노트</h1>
+        <h1>📘 리액트 정리</h1>
       </header>
 
       <div className="main-layout">
