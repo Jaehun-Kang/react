@@ -6,14 +6,14 @@
 body, html, .app {
     height: 100%;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     background-color: #121212;
     color: #e0e0e0;
 }
 
 
 .app {
-    padding-top: 90px;
+    padding-top: 5.625rem;
 }
 
 .fixed-header {
@@ -23,27 +23,28 @@ body, html, .app {
     height: auto;
     background: #1e1e1e;
     color: #fff;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 .125rem .25rem rgba(255, 255, 255, 0.1);
     z-index: 1000;
 }
 
 .fixed-header h1 {
-    margin: 24px;
+    margin: 1.5rem;
     font-size: 2rem;
 }
 
 .main-layout {
     display: flex;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 5.625rem);
     box-sizing: border-box;
     width: 100%;
 }
 
 .sidebar {
     width: 15%;
-    min-width: 250px;
-    border-right: 1px solid #333;
+    min-width: 15.625rem;
+    border-right: .0625rem solid #333;
     padding: 1rem .5rem;
+    font-size: .875rem;
     background-color: #1a1a1a;
     overflow-y: auto;
 }
@@ -55,11 +56,11 @@ body, html, .app {
 }
 
 .lesson-list li {
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
     cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    margin-top: 4px;
+    border: .125rem solid transparent;
+    border-radius: .5rem;
+    margin-top: .25rem;
     color: #ccc;
 }
 
@@ -82,6 +83,7 @@ body, html, .app {
     flex: 1 1 auto;
     padding: 2.5rem 2rem;
     overflow-y: auto;
+    font-size: .875rem;
     background-color: #181818;
     color: #e0e0e0;
 }
@@ -98,9 +100,13 @@ body, html, .app {
     white-space: pre;
 }
 
+.content-area pre span {
+    background-color: #2a2a2a;
+}
+
 .lesson-content p {
     margin-left: .5rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;;
 }
 
@@ -116,23 +122,42 @@ body, html, .app {
     color: #fff;
 }
 
-
 .code-wrapper {
     background-color: #2a2a2a;
     border-radius: .5rem;
     display: block;
     width: 100%;
     margin: 1rem 0;
+    font-size: .875rem;
     box-sizing: border-box;
-    border: 1px solid #444;
+    border: .0625rem solid #444;
 }
 
 .code-filename {
     background-color: #1f1f1f;
     color: #e0e0e0;
-    font-size: 0.85rem;
-    padding: 0.5rem 1rem;
+    font-size: .75rem;
+    padding: .5rem 1rem;
     border-radius: .5rem .5rem 0 0;
-    border-bottom: 1px solid #444;
+    border-bottom: .0625rem solid #444;
 }
 
+.foldable-section {
+    box-sizing: border-box;
+    color: #e0e0e0;
+    font-size: .875rem;
+    margin-block: 1rem;
+
+}
+
+.foldable-header {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.foldable-content {
+    border-left: .125rem solid #555;
+    padding-left: 1rem;
+    margin-left: 0.25rem;
+    margin-block: 1rem;
+}

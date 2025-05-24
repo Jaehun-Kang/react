@@ -1,5 +1,6 @@
 import '../../styles/lesson.css';
 import CodeBlock from '../CodeBlock';
+import Foldable from "../Foldable";
 
 const Lesson1 = {
   name: '1. 프로젝트 생성하기',

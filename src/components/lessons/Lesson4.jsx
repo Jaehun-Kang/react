@@ -1,5 +1,6 @@
 import '../../styles/lesson.css';
 import CodeBlock from '../CodeBlock';
+import Foldable from "../Foldable";
 
 const Lesson4 = {
     name: '4. 컴포넌트 기초',
@@ -13,6 +14,14 @@ const Lesson4 = {
                 language="jsx"
                 code={`code`}
             />
+            <Foldable title="폴더제목">
+                <p>내용</p>
+                <CodeBlock
+                    filename="MyComponent.jsx"
+                    language="jsx"
+                    code={`code`}
+                />
+            </Foldable>
         </div>
     )
 };

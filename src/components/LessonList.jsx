@@ -1,5 +1,3 @@
-// components/LessonList.jsx
-
 const LessonList = ({ lessons, onSelect, selectedIdx }) => {
     return (
     <ul className="lesson-list">
