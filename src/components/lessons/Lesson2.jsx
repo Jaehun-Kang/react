@@ -10,13 +10,13 @@ const Lesson2 = {
       <h2>프로젝트 명령어 사용하기</h2>
       {/* 프로젝트 명령어 */}
       <div>
-        <h3>- 프로젝트 명령어</h3>
+        <h3>프로젝트 명령어</h3>
         <p>1. NPM 패키지 매니저</p>
         <p>npm은 Node.js 프로젝트를 관리할 수 있는 패키지 매니저이다. 프로젝트 관련 작업을 명령어로 package.json에 정의한다.</p>
         <CodeBlock
-            filename="package.json"
-            language="json"
-            code={`"scripts": {
+          filename="package.json"
+          language="json"
+          code={`"scripts": {
   "dev": "vite",
   "build": "vite build",
   "lint": "eslint .",
@@ -25,9 +25,9 @@ const Lesson2 = {
         />
         <p>주로 사용하게 될 명령어는 다음과 같다.</p>
         <CodeBlock
-            filename="Terminal"
-            language="bash"
-            code={`npm run dev
+          filename="Terminal"
+          language="bash"
+          code={`npm run dev
 npm run build
 npm run preview
 `}
@@ -42,14 +42,14 @@ npm run preview
         <h3>[참고]</h3>
         <p>크롬 이외의 브라우저가 기본 브라우저로 설정되어 있다면 cross-env를 설치하고, package.json을 아래처럼 바꿔야 명령어를 실행했을 때 크롬 브라우저로 열린다.</p>
         <CodeBlock
-            filename="Terminal"
-            language="bash"
-            code={`npm install cross-env --save-dev`}
+          filename="Terminal"
+          language="bash"
+          code={`npm install cross-env --save-dev`}
         />
         <CodeBlock
-            filename="package.json"
-            language="json"
-            code={`"scripts": {
+          filename="package.json"
+          language="json"
+          code={`"scripts": {
   "dev": "cross-env BROWSER=chrome vite",
   "build": "vite build",
   "lint": "eslint .",

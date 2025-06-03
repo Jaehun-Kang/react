@@ -9,7 +9,7 @@ const Lesson1 = {
     <div className="lesson-content">
       <h2>프로젝트 생성하기</h2>
       {/* <p>내용</p> */}
-      <h3>- 프로젝트 루트 폴더 생성</h3>
+      <h3>프로젝트 루트 폴더 생성</h3>
       <p>1. 프로젝트를 넣을 폴더를 생성후 해당 폴더를 VSCode로 연다.</p>
       <p>2. 터미널을 열고 다음과 같이 입력한다.</p>
       <CodeBlock
@@ -19,7 +19,7 @@ const Lesson1 = {
       />
       <p>3. 프로젝트명 설정, 라이브러리 선택(React), 언어 선택(JavaScript)을 한다.</p>
 
-      <h3>- React 라이브러리 설치</h3>
+      <h3>React 라이브러리 설치</h3>
       <p>1. 생성된 폴더를 다시 VSCode로 연다.</p>
       <p>2. 터미널에 다음과 같이 입력하여 라이브러리를 설치한다.</p>
       <CodeBlock

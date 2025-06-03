@@ -18,7 +18,7 @@ function App() {
           <LessonList lessons={lessons} onSelect={setSelectedIdx} selectedIdx={selectedIdx} />
         </aside>
         <main className="content-area">
-          {selectedLesson ? selectedLesson.content : <p>단원을 선택해주세요.</p>}
+          {selectedLesson ? selectedLesson.content : <h2>단원을 선택해주세요.</h2>}
         </main>
       </div>
     </div>

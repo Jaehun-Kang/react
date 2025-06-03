@@ -11,7 +11,7 @@ const Lesson3 = {
       <p>프로젝트를 처음 생성했을 때 파일들을 보고 작동 원리를 파악해보자.</p>
       {/* index.html */}
       <div>
-        <h3>- index.html</h3>
+        <h3>index.html</h3>
         <Foldable title="전체 코드">
           <CodeBlock
             filename="index.html"
@@ -53,7 +53,7 @@ const Lesson3 = {
 
       {/* main.jsx */}
       <div>
-        <h3>- main.jsx</h3>
+        <h3>main.jsx</h3>
         <Foldable title="전체 코드">
           <CodeBlock
           filename="main.jsx"
@@ -91,7 +91,7 @@ createRoot(document.getElementById('root')).render(
 
       {/* App.jsx */}
       <div>
-        <h3>- App.jsx</h3>
+        <h3>App.jsx</h3>
         <Foldable title="전체 코드">
           <CodeBlock
             filename="App.jsx"
@@ -177,7 +177,7 @@ import './App.css'`}
         />
       </div>
       <div>
-        <h3>- 정리하자면,</h3>
+        <h3>정리하자면,</h3>
         <p>App.jsx에서 return 함수 안에 있는 것들이 main.js로 임포트되고,</p>
         <CodeBlock
           filename="App.jsx"
